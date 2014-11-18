@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery UI Effects Demo</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">	
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".toggleButton").on("click", function() {
+          var effect = $(this).text();
+          $(".one").toggle(effect);
+        });
+      });
+    </script>
+    <style>
+      div {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        margin: 10px
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggleButton">fade</button>
+    <button class="toggleButton">slide</button>
+    <button class="toggleButton">blind</button>
+    <button class="toggleButton">drop</button>
+    <button class="toggleButton">bounce</button>
+    <button class="toggleButton">explode</button>
+    <button class="toggleButton">puff</button>
+    <button class="toggleButton">pulsate</button>
+    <button class="toggleButton">scale</button>
+    <button class="toggleButton">shake</button>
+    <button class="toggleButton">fold</button>
+    <div class="one"></div>
+  </body>
+</html>
